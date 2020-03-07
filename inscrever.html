@@ -1,3 +1,4 @@
+require_once("page-header.html");
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -48,7 +49,7 @@
               <li><a href="premium.html">Premium</a></li>
               <li><a href="">Ajuda</a></li>
               <li><a href="">Baixar</a></li>
-               <li class="divisor"role="separator"></li>
+              <li class="divisor"role="separator"></li>
               <li><a href="inscrever.html">Inscrever-se</a></li>
               <li><a href="entrar.html">Entrar</a></li>
 
@@ -58,115 +59,69 @@
         </div>  <!-- /container -->
     </nav> <!-- /navbar -->
     
-    <div class="capa">
-      <div class="texto-capa">
-        <h1>Música para todos</h1>
-        <a href="" class="btn btn-custom btn-roxo btb-lg">Aproveite o Spotify Free</a>
-        <a href="" class="btn btn-custom btn-branco btb-lg">Obter o Spotify Premium</a>
-      </div>
-    </div>
+   
+    <div class="container" style="padding-top: 90px;">
+ 
+        <form>
 
-      <!-- Conteudo -->
-      <section id="servicos">
-          <div class="container">
-            <div class="row">
-
-              <!-- Albuns -->
-              <div class="col-md-6">
-
-                <dir class="row albuns">
-
-                  <div class="col-md-6">
-                    <img src="imagens/img1.jpg" class="img-responsive">
-                  </div>
-                  <div class="col-md-6">
-                    <img src="imagens/img2.jpg" class="img-responsive">
-                  </div>
-
-                </dir> <!-- /row -->
-
-                <dir class="row albuns">
-
-                  <div class="col-md-6">
-                    <img src="imagens/img3.jpg" class="img-responsive">
-                  </div>
-                  <div class="col-md-6">
-                    <img src="imagens/img4.jpg" class="img-responsive">
-                  </div>
-
-                </dir> <!-- /row -->
-
-              </div>
-              
-              <!-- Servicos -->
-              <div class="col-md-6">
-
-                <h2>O que o Spotify tem?</h2>
-
-                <h3>Músicas</h3>
-                <p>O Spotify asodjf asfiusadiuf asiudfhiuasdhf asiudfhiuas
-                uiasdfuasduif auidshfaisd udfhiuasdhf asiudfhiuas udfhiuasdhf asiudfhiuas</p>
-                <h3>Playlists</h3>
-                <p>O Spotify asodjf asfiusadiuf udfhiuasdhf asiudfhiuas asiudfhiuasdhf asiudfhiuas
-                uiasdfuasduif auidshfaisd</p>
-                <h3>Novos lançamentos</h3>
-                <p>O Spotify asodjf asfiusadiuf audfhiuasdhf asiudfhiuas siudfhiuasdhf asiudfhiuas
-                uiasdfuasduif auidshfaisd</p>
-
-
-
-              </div>
-              
-
-            </div>
-            
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
           </div>
-      </section>
-      <section id="recursos">
-        <div class="container">
-          <div class="row">
-            
-            <!-- recursos -->
-            <div class="col-md-4" > 
 
-               <h2>Fácil</h2>
-
-                <h3>Buscar</h3>
-                <p>O Spotify asodjf asfiusadiuf asiudfhiuasdhf asiudfhiuas
-                uiasdfuasduif auidshfaisd udfhiuasdhf asiudfhiuas udfhiuasdhf asiudfhiuas</p>
-                <h3>Navegar</h3>
-                <p>O Spotify asodjf asfiusadiuf udfhiuasdhf asiudfhiuas asiudfhiuasdhf asiudfhiuas
-                uiasdfuasduif auidshfaisd</p>
-                <h3>Descobrir</h3>
-                <p>O Spotify asodjf asfiusadiuf audfhiuasdhf asiudfhiuas siudfhiuasdhf asiudfhiuas
-                uiasdfuasduif auidshfaisd</p>
-
-            </div>
-            <!-- img recursos -->
-            <div class="col-md-8">      
-            
-             <dir class="row rotacionar">
-
-                  <div class="col-md-6">
-                    <img src="imagens/iphone1.png" class="img-responsive">
-                  </div>
-                  <div class="col-md-6">
-                    <img src="imagens/iphone2.png" class="img-responsive">
-                  </div>
-
-                </dir> <!-- /row -->
-
-
-              </div>
-            </div>
-
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Senha</label>
+            <input type="password" class="form-control" id="inputPassword4">
           </div>
         </div>
-      </section>
 
-      <!-- Rodape -->
+        <div class="form-group col-md-12">
+          <label for="inputAddress">Endereço</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
 
-      <footer id="rodape">
+        <div class="form-group col-md-12">
+          <label for="inputAddress2">Complemento</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartmento, estudio, ou casa">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Cidade</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Estado</label>
+            <select id="inputState" class="form-control">
+              <option selected>Escolher...</option>
+              <option>Recife</option>
+              <option>Paraíba</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">CEP</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+
+
+        <div class="form-group col-md-2">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Aceito os termos
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Inscrever-se</button>
+      </form>
+
+</div>
+
+  <!-- Rodape -->
+
+      <footer class="footer navbar-fixed-bottom" id="rodape">
         <div class="container">
           
           <div class="row">
@@ -219,10 +174,10 @@
       </footer>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>

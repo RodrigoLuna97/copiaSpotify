@@ -152,3 +152,81 @@ h2{
 	text-transform: uppercase;
 
 }
+
+/*=================PREMIUM=================*/
+
+section.premium {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+
+}
+
+.Premium .card {
+  background: white;
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 2rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.Premium hr {
+  margin: 1.5rem 0;
+}
+
+.Premium .card-title {
+  padding-top: 12px;
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.Premium .card-price {
+  font-size: 4rem;
+  margin: 10;
+
+}
+
+.Premium .card-price .period {
+  font-size: 2rem;
+}
+
+.Premium ul li {
+  margin-bottom: 4rem;
+}
+
+.Premium .text-muted {
+  opacity: 0.6;
+}
+
+.Premium .btn {
+  background: #7c25f8;
+  font-size: 80%;
+  border-radius: 1rem;
+  letter-spacing: 0.4rem;
+  font-weight: bold;
+  padding: 1.2rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .Premium .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .Premium .card:hover .btn{
+	color: white;
+	background-color: #6207e3;
+	}
+
+
+.entrar{
+	padding-top: 100px;
+	vertical-align: middle;
+	
+}
